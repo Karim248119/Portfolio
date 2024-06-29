@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="z-50">
+      <div
+        class="nav z-50 w-full flex justify-between items-center flex-row absolute top-0 left-0 p-8 md:px-20 text-white z-30"
+      >
+        <div class="md:text-3xl text-base font-[700] text-theme">Fokir</div>
+        <div class="sm:flex gap-5 hidden navs font-bold">
+          <a href="#Home">Home</a>
+          <a href="#About">About</a>
+          <a href="#Services"> Services</a>
+          <a href="#Portfolio">Portfolio</a>
+          <a href="#Testimonial">Testimonial</a>
+          <a href="#Blog">Blog</a>
+          <a href="#Contact">Contact</a>
+        </div>
+
+        <div class="sm:hidden flex flex-col">
+          <button
+            class="border-[0.5px] border-gray-600 px-2 py-1 rounded-[2px] menuBtn flex justify-center items-center"
+          >
+            <i class="fa-solid text-[10px] fa-bars text-gray-600"></i>
+          </button>
+        </div>
+      </div>
+      <div
+        class="flex flex-col py-3 overflow-hidden navs md:hidden hidden z-50 bg-white w-full text-xs text-center gap-2 font-semibold absolute top-24 menu"
+      >
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Services"> Services</a>
+        <a href="#Portfolio">Portfolio</a>
+        <a href="#Testimonial">Testimonial</a>
+        <a href="#Blog">Blog</a>
+        <a href="#Contact">Contact</a>
+      </div>
+    </nav>
+
+    <div
+      class="z-40 w-full fixed md:-left-48 -left-16 md:bottom-[50vh] bottom-[70vh] flex flex-row justify-start items-start palette-container transition-all duration-1000 delay-150"
+    >
+      <div
+        class="md:w-48 w-16 p-2 md:p-5 overflow-hidden bg-primary flex flex-col md:gap-5 gap-2 items-center palette"
+      >
+        <p class="md:text-base text-[6px]">Pick Your Color</p>
+        <div
+          class="w-full grid grid-rows-2 grid-cols-4 md:gap-2 gap-[2px] color-palette"
+        >
+          <button
+            class="w-full aspect-square rounded-sm md:rounded-lg bg-palette1"
+          ></button>
+          <button
+            class="w-full aspect-square rounded-sm md:rounded-lg bg-palette2"
+          ></button>
+          <button
+            class="w-full aspect-square rounded-sm md:rounded-lg bg-palette3"
+          ></button>
+          <button
+            class="w-full aspect-square rounded-sm md:rounded-lg bg-palette4"
+          ></button>
+          <button
+            class="w-full aspect-square rounded-sm md:rounded-lg bg-palette5"
+          ></button>
+          <button
+            class="w-full aspect-square rounded-sm md:rounded-lg bg-palette6"
+          ></button>
+          <button
+            class="w-full aspect-square rounded-sm md:rounded-lg bg-palette7"
+          ></button>
+          <button
+            class="w-full aspect-square rounded-sm md:rounded-lg bg-palette8"
+          ></button>
+        </div>
+      </div>
+      <button class="bg-secondary px-2 py-1 rounded-ee rounded-tr side-btn">
+        <i class="fa-solid md:text-base fa-2xs fa-gear text-white"></i>
+      </button>
+    </div>
+    <button
+      class="topBtn rounded flex justify-center opacity-0 fixed bg-black md:p-4 p-2 bottom-28 right-5 transition-all ease-linear duration-700 cursor-pointer"
+    >
+      <i class="fa-solid fa-circle-arrow-up md:text-xl text-xs text-white"></i>
+    </button>
+    <section id="Home">
+      <div
+        class="h-[100vh] w-full -z-50 fixed"
+        style="
+          background-image: url(https://images.alphacoders.com/113/thumb-1920-1135372.jpg);
+          background-size: cover;
+          background-position: center center;
+        "
+      ></div>
+      <div
+        class="h-[100vh] w-full bg-black opacity-70 absolute top-0 left-0"
+      ></div>
+      <div
+        class="h-[100vh] w-full flex justify-center items-center flex-col text-white gap-8 relative"
+      >
+        <p class="md:text-2xl">Hello, I'm</p>
+        <p class="md:text-6xl text-xl text-theme">Sherlock Holmes</p>
+        <p class="md:text-xl text-sm">
+          I'm <span class="text-theme job"></span>
+        </p>
+      </div>
+    </section>
+    <section id="About">
+      <div
+        class="w-full aspect-8/3 aspect bg-white grid grid-cols-2 md:grid-cols-3"
+      >
+        <div class="h-full w-full flex justify-end items-center relative">
+          <div
+            class="group h-[70%] w-[50%] rounded-lg md:rounded-xl z-30 relative overflow-hidden"
+          >
+            <img
+              class="h-full w-full rounded-lg"
+              src="https://i.pinimg.com/564x/eb/23/3c/eb233cd0df8f9838dab76710cc7a4fce.jpg"
+              alt=""
+            />
+            <div
+              class="w-full h-full bg-black opacity-50 z-20 absolute left-0 top-full group-hover:top-0 transition-all duration-300"
+            ></div>
+            <div
+              class="w-full h-full flex justify-center items-center md:gap-5 gap-1 z-30 absolute left-0 top-full group-hover:top-0 transition-all duration-300"
+            >
+              <i
+                class="fa-brands text-primary text-hover md:text-4xl text-xs fa-facebook"
+              ></i>
+              <i
+                class="fa-brands text-primary text-hover md:text-4xl text-xs fa-twitter"
+              ></i>
+              <i
+                class="fa-brands text-primary text-hover md:text-4xl text-xs fa-github"
+              ></i>
+              <i
+                class="fa-brands text-primary text-hover md:text-4xl text-xs fa-linkedin"
+              ></i>
+            </div>
+          </div>
+          <div
+            class="h-[75%] w-[50%] rounded-lg hidden md:flex justify-center items-center bg-black absolute -translate-y-1/2 top-[45%] right-[5%]"
+          >
+            <div
+              class="h-[calc(100%-15px)] w-[calc(100%-15px)] rounded-md bg-white"
+            ></div>
+          </div>
+        </div>
+        <div class="md:col-span-2 col-span-1 flex justify-center items-center">
+          <div
+            class="md:p-5 p-2 md:text-[1.2vw] text-[2vw] flex-col justify-center items-center"
+          >
+            <h2 class="text-[2vw] font-semibold">
+              <span class="text-theme font-bold">|</span>HELLO,
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In soluta
+              sed libero ut cum praesentium, quam dolor alias nulla vel
+              molestias aperiam vero sapiente quis dolore voluptate id, odio
+              porro.
+            </p>
+            <div
+              class="w-2/3 m-auto md:border-t-2 border-t-[0.5px] border-dashed border-black md:my-10 my-2"
+            ></div>
+            <div class="grid grid-cols-2 md:leading-[3vw] leading-[4vw]">
+              <div>
+                <p><span class="font-semibold">Name: </span>Sherlock Holmes</p>
+                <p><span class="font-semibold">Age: </span>36 years</p>
+                <p><span class="font-semibold">Freelance: </span>Available</p>
+              </div>
+              <div>
+                <p><span class="font-semibold">Job Title: </span>Detective</p>
+                <p>
+                  <span class="font-semibold">Location: </span>221B Baker
+                  Street, London
+                </p>
+                <p>
+                  <span class="font-semibold">Email: </span>watson420@gmail.com
+                </p>
+              </div>
+            </div>
+            <div class="flex md:gap-5 gap-1 md:pt-10 pt-4">
+              <button
+                class="md:px-5 md:py-2 px-2 py-1 bg-theme text-white md:rounded rounded-sm border-2 btn"
+              >
+                Download CV
+              </button>
+              <button
+                class="md:px-5 md:py-2 px-2 py-1 bg-theme text-white md:rounded rounded-sm border-2 btn"
+              >
+                Hire Me
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Services" class="">
+      <div class="md:h-[70vh] w-full bg-primary flex flex-col items-center">
+        <div
+          class="w-full flex items-center flex-col md:gap-1 gap-[0.1rem] pt-5"
+        >
+          <p class="text-[4vw] md:text-[2.5vw] text-secondary">Our services</p>
+          <div class="w-[5%] md:h-[1px] h-[0.2px] bg-theme"></div>
+          <div class="w-[10%] md:h-[1px] h-[0.2px] bg-theme"></div>
+          <div class="w-[5%] md:h-[1px] h-[0.2px] bg-theme"></div>
+        </div>
+        <div
+          class="w-full h-full grid md:grid-cols-4 md:grid-rows-1 grid-cols-2 grid-rows-2"
+        >
+          <div class="w-full h-full flex justify-center items-center">
+            <div class="card w-[80%] aspect-square md:gap-4 gap-2">
+              <i
+                class="fa-solid md:text-[2vw] text-[4vw] fa-user-secret text-secondary"
+              ></i>
+
+              <h2 class="text-[3vw] md:text-[2.5vw]">detective</h2>
+              <p class="text-[2vw] md:text-[1vw]">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Perferendis magni enim cumque facere natus, voluptatibus
+                voluptates!
+              </p>
+            </div>
+          </div>
+          <div class="w-full h-full flex justify-center items-center">
+            <div class="card w-[80%] aspect-square md:gap-4 gap-2">
+              <i
+                class="fa-solid md:text-[2vw] text-[4vw] fa-pen-fancy text-secondary"
+              ></i>
+
+              <h2 class="text-[3vw] md:text-[2.5vw]">Author</h2>
+              <p class="text-[2vw] md:text-[1vw]">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Perferendis magni enim cumque facere natus, voluptatibus
+                voluptates!
+              </p>
+            </div>
+          </div>
+          <div class="w-full h-full flex justify-center items-center">
+            <div class="card w-[80%] aspect-square md:gap-4 gap-2">
+              <i
+                class="fa-solid md:text-[2vw] text-[4vw] fa-music text-secondary"
+              ></i>
+
+              <h2 class="text-[3vw] md:text-[2.5vw]">Musician</h2>
+              <p class="text-[2vw] md:text-[1vw]">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Perferendis magni enim cumque facere natus, voluptatibus
+                voluptates!
+              </p>
+            </div>
+          </div>
+          <div class="w-full h-full flex justify-center items-center">
+            <div class="card w-[80%] aspect-square md:gap-4 gap-2">
+              <i
+                class="fa-solid md:text-[2vw] text-[4vw] fa-flask text-secondary"
+              ></i>
+
+              <h2 class="text-[3vw] md:text-[2.5vw]">Scientist</h2>
+              <p class="text-[2vw] md:text-[1vw]">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Perferendis magni enim cumque facere natus, voluptatibus
+                voluptates!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Portfolio">
+      <div class="w-full bg-white">
+        <div
+          class="w-full flex items-center flex-col md:gap-1 gap-[0.1rem] pt-5"
+        >
+          <p class="text-[4vw] md:text-[2.5vw] text-secondary">Our Portfolio</p>
+          <span class="w-[5%] md:h-[1px] h-[0.2px] bg-theme"></span>
+          <span class="w-[10%] md:h-[1px] h-[0.2px] bg-theme"></span>
+          <span class="w-[5%] md:h-[1px] h-[0.2px] bg-theme"></span>
+        </div>
+        <div>
+          <div
+            class="w-full flex justify-center text-[0.5rem] md:text-base py-4 md:py-0"
+          >
+            <button class="outline-none text-hover md:p-5 p-1 all-filter">
+              ALL
+            </button>
+            <button class="outline-none text-hover md:p-5 p-1 hats-filter">
+              HATS
+            </button>
+            <button class="outline-none text-hover md:p-5 p-1 pipes-filter">
+              PIPES
+            </button>
+            <button class="outline-none text-hover md:p-5 p-1 scarf-filter">
+              SCARF
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="products flex flex-wrap items-center justify-center md:gap-10 gap-2 md:w-full px-10 md:px-24 pb-4"
+        >
+          <div class="md:w-[30%] w-[40%] aspect-[1.3] hat bg-palette1">
+            <img src="./imgs/hat1.jpg" alt="" class="h-[100%] w-[100%] hat" />
+          </div>
+          <div class="md:w-[30%] w-[40%] aspect-[1.3] hat bg-palette2">
+            <img src="./imgs/hat2.jpg" alt="" class="h-[100%] w-[100%] hat" />
+          </div>
+          <div class="md:w-[30%] w-[40%] aspect-[1.3] pipe bg-palette5">
+            <img src="./imgs/pipe1.jpg" alt="" class="h-[100%] w-[100%] pipe" />
+          </div>
+          <div class="md:w-[30%] w-[40%] aspect-[1.3] pipe bg-palette4">
+            <img src="./imgs/pipe2.jpg" alt="" class="h-[100%] w-[100%] pipe" />
+          </div>
+          <div class="md:w-[30%] w-[40%] aspect-[1.3] scarf bg-palette3">
+            <img
+              src="./imgs/scarf1.jpg"
+              alt=""
+              class="h-[100%] w-[100%] pipe"
+            />
+          </div>
+          <div class="md:w-[30%] w-[40%] aspect-[1.3] scarf bg-palette8">
+            <img
+              src="./imgs/scarf2.jpg"
+              alt=""
+              class="h-[100%] w-[100%] pipe"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Testimonial">
+      <div
+        class="w-full md:h-[30vh] h-[25vh] bg-primary grid md:grid-cols-4 md:grid-rows-1 grid-cols-2 grid-rows-2"
+      >
+        <div class="md:gap-4 gap-1 flex flex-col justify-center items-center">
+          <i
+            class="fa-solid md:text-[2vw] text-[5vw] fa-users text-secondary"
+          ></i>
+
+          <h2 class="text-[3vw] md:text-[2.5vw]">2</h2>
+          <p class="text-[2vw] md:text-[1vw]">Team members</p>
+        </div>
+        <div class="md:gap-4 gap-1 flex flex-col justify-center items-center">
+          <i
+            class="fa-solid md:text-[2vw] text-[5vw] fa-folder-open text-secondary"
+          ></i>
+
+          <h2 class="text-[3vw] md:text-[2.5vw]">68</h2>
+          <p class="text-[2vw] md:text-[1vw]">Case</p>
+        </div>
+        <div class="md:gap-4 gap-1 flex flex-col justify-center items-center">
+          <i
+            class="fa-solid md:text-[2vw] text-[5vw] fa-book text-secondary"
+          ></i>
+
+          <h2 class="text-[3vw] md:text-[2.5vw]">56</h2>
+          <p class="text-[2vw] md:text-[1vw]">Books</p>
+        </div>
+        <div class="md:gap-4 gap-1 flex flex-col justify-center items-center">
+          <i
+            class="fa-solid md:text-[2vw] text-[5vw] fa-brain text-secondary"
+          ></i>
+
+          <h2 class="text-[3vw] md:text-[2.5vw]">190</h2>
+          <p class="text-[2vw] md:text-[1vw]">IQ</p>
+        </div>
+      </div>
+      <div class="feedback">
+        <div class="w-full md:h-[80vh] bg-white">
+          <div
+            class="w-full flex items-center flex-col md:gap-1 gap-[0.1rem] py-5"
+          >
+            <p class="text-[4vw] md:text-[2.5vw] text-secondary">
+              Client's Feedback
+            </p>
+            <span class="w-[5%] md:h-[1px] h-[0.2px] bg-theme"></span>
+            <span class="w-[10%] md:h-[1px] h-[0.2px] bg-theme"></span>
+            <span class="w-[5%] md:h-[1px] h-[0.2px] bg-theme"></span>
+          </div>
+          <div class="owl-carousel owl-theme">
+            <div class="item w-full h-full">
+              <div class="w-[60vw] aspect-8/3 bg-primary grid grid-cols-3">
+                <div class="w-full h-full col-span-1 overflow-hidden relative">
+                  <div class="w-full aspect-square absolute">
+                    <div class="corner"></div>
+                    <div
+                      class="w-[40%] aspect-square rounded-full overflow-hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    >
+                      <img src="./imgs/watson.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-2 md:text-[1.2vw] text-[2vw] text-start text-secondary flex flex-col justify-center gap-1 md:gap-4 py-3"
+                >
+                  <p class="font-semibold md:text-[2vw] text-[2.2vw]">
+                    John Watson
+                  </p>
+                  <div class="flex items-center md:gap-2 gap-1">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>London</p>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga ex temporibus dolor. Iusto a adipisci quaerat expedita
+                    dolores, commodi, ipsam eius velit deserunt at asperiores
+                    cum laboriosam, veniam explicabo. Tempore.
+                  </p>
+                  <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item w-full h-full">
+              <div class="w-[60vw] aspect-8/3 bg-primary grid grid-cols-3">
+                <div class="w-full h-full col-span-1 overflow-hidden relative">
+                  <div class="w-full aspect-square absolute">
+                    <div class="corner"></div>
+                    <div
+                      class="w-[40%] aspect-square rounded-full overflow-hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    >
+                      <img src="./imgs/watson.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-2 md:text-[1.2vw] text-[2vw] text-start text-secondary flex flex-col justify-center gap-1 md:gap-4 py-3"
+                >
+                  <p class="font-semibold md:text-[2vw] text-[2.2vw]">
+                    John Watson
+                  </p>
+                  <div class="flex items-center md:gap-2 gap-1">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>London</p>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga ex temporibus dolor. Iusto a adipisci quaerat expedita
+                    dolores, commodi, ipsam eius velit deserunt at asperiores
+                    cum laboriosam, veniam explicabo. Tempore.
+                  </p>
+                  <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Blog">
+      <div class="w-full bg-primary md:py-10 py-5">
+        <div
+          class="w-full flex items-center flex-col md:gap-1 gap-[0.1rem] pb-5"
+        >
+          <p class="text-[4vw] md:text-[2.5vw] text-secondary">Our Blog</p>
+          <div class="w-[5%] md:h-[1px] h-[0.2px] bg-theme"></div>
+          <div class="w-[10%] md:h-[1px] h-[0.2px] bg-theme"></div>
+          <div class="w-[5%] md:h-[1px] h-[0.2px] bg-theme"></div>
+        </div>
+        <div class="w-[80%] grid grid-cols-3 m-auto md:gap-6 gap-2">
+          <div class="h-full w-full">
+            <div class="w-full flex flex-col bg-white shadow">
+              <img
+                src="https://1884403144.rsc.cdn77.org/foto/sherlock/Njg4eDM4Ny9zbWFydC9pbWc/2548482.jpg?v=0&st=VqhMr-eZd-Vr9ihb21sPzWzEyloCH9J1ydwHHlLDFUE&ts=1600812000&e=0"
+                alt=""
+                class="w-full aspect-video 0"
+              />
+              <div
+                class="w-full text-[1vw] text-secondary flex flex-col md:gap-3 md:p-4 p-1"
+              >
+                <p class="">23 November, 2015</p>
+                <p class="text-theme font-bold text-[1.5vw]">
+                  The Hound of the Baskervilles
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Consequuntur ea, quis magnam deserunt eius incidunt repellat
+                  molestiae.
+                </p>
+                <button class="text-theme self-start">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="h-full w-full">
+            <div class="w-full h-full flex flex-col bg-white shadow">
+              <div class="iframe-container w-full">
+                <iframe
+                  src="https://www.youtube.com/embed/q8odl57WQYE?si=fbCeqOIPM2-69Ayw"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  class="responsive-iframe"
+                ></iframe>
+              </div>
+
+              <div
+                class="w-full text-[1vw] text-secondary flex flex-col md:gap-3 md:p-4 p-1"
+              >
+                <p class="">23 November, 2015</p>
+                <p class="text-theme font-bold text-[1.5vw]">
+                  The unknown crime
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Consequuntur ea, quis magnam deserunt eius incidunt repellat
+                  molestiae.
+                </p>
+                <button class="text-theme self-start">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="h-full w-full">
+            <div class="w-full flex flex-col bg-white shadow">
+              <img
+                src="https://operachic.typepad.com/.a/6a00d83451c83e69e20162ff594c97970d-500wi"
+                alt=""
+                class="w-full aspect-video object-cover 0"
+              />
+              <div
+                class="w-full text-[1vw] text-secondary flex flex-col md:gap-3 md:p-4 p-1"
+              >
+                <p class="">23 November, 2015</p>
+                <p class="text-theme font-bold text-[1.5vw]">The Great Game</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Consequuntur ea, quis magnam deserunt eius incidunt repellat
+                  molestiae.
+                </p>
+                <button class="text-theme self-start">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Contact">
+      <div class="w-full md:h-[90vh] bg-white">
+        <div
+          class="w-full flex items-center flex-col md:gap-1 gap-[0.1rem] md:py-10 py-4"
+        >
+          <p class="text-[4vw] md:text-[2.5vw] text-secondary">Contact Us</p>
+          <div class="w-[5%] md:h-[1px] h-[0.2px] bg-theme"></div>
+          <div class="w-[10%] md:h-[1px] h-[0.2px] bg-theme"></div>
+          <div class="w-[5%] md:h-[1px] h-[0.2px] bg-theme"></div>
+        </div>
+        <div
+          class="w-full h-full flex text-[2vw] md:text-[1vw] justify-start items-start"
+        >
+          <div class="w-full contact flex flex-col gap-5 md:px-20 px-5 pb-5">
+            <div class="grid grid-cols-2 gap-5">
+              <input
+                type="text"
+                placeholder="Name"
+                class="border-2 rounded md:p-2 p-1"
+              />
+              <input
+                type="email"
+                placeholder="E-mail"
+                class="border-2 rounded md:p-2 p-1"
+              />
+            </div>
+            <input
+              type="text"
+              placeholder="Subject"
+              class="border-2 rounded md:p-2 p-1"
+            />
+
+            <textarea
+              placeholder="Message"
+              class="flex border-2 rounded md:p-2 p-1 md:h-[30vh] h-[10vh]"
+            ></textarea>
+            <button
+              class="self-start md:px-5 md:py-2 px-2 py-1 bg-theme text-white md:rounded rounded-sm border-2 btn"
+            >
+              SEND MESSAGE
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="md:h-[25vh] h-[10vh] bg-black">
+        <div
+          class="w-full h-1/2 flex justify-center items-center md:gap-5 gap-1"
+        >
+          <i
+            class="fa-brands text-secondary text-hover hover:scale-110 transition-all duration-300 md:text-4xl text-xs fa-facebook"
+          ></i>
+          <i
+            class="fa-brands text-secondary text-hover hover:scale-110 transition-all duration-300 md:text-4xl text-xs fa-twitter"
+          ></i>
+          <i
+            class="fa-brands text-secondary text-hover hover:scale-110 transition-all duration-300 md:text-4xl text-xs fa-github"
+          ></i>
+          <i
+            class="fa-brands text-secondary text-hover hover:scale-110 transition-all duration-300 md:text-4xl text-xs fa-linkedin"
+          ></i>
+        </div>
+        <div class="h-1/2 text-secondary text-center md:text-base text-[5px]">
+          Copy Right 2022 © By
+          <span class="text-theme">Karim Abdelhalim</span> All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
